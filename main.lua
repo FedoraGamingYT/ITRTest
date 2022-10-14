@@ -16,4 +16,12 @@ function mainOS.loadOS()
   print("Loaded latest version of IFE software.")
   mainOS.open()
 end
+function mainOS.unloadOS()
+  if loaded == false then
+    print("The OS is not loaded!")
+  else 
+    print("Unloaded IFE software.")
+    mainOS.close()
+  end
+end
 return mainOS
