@@ -5,13 +5,14 @@ local loaded = true
 function mainOS.notify() -- work in progress
 
 end
-function mainOS.loadOS() 
+function mainOS.loadOS()
   dir = script.Parent
-  if dir.ClassName == "Frame" then
-    dir:Destroy()
-  else
-    print("no")
-  end
   print("Loaded latest version of IFE software.")
+end
+function mainOS.close()
+  dir.Visible = false
+end
+function mainOS.open()
+  dir.Visible = true
 end
 return mainOS
