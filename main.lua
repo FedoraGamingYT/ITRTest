@@ -7,7 +7,11 @@ function mainOS.notify() -- work in progress
 end
 function mainOS.loadOS() 
   dir = script.Parent
-  dir:Destroy()
+  if dir.ClassName == "Frame" then
+    dir:Destroy()
+  else
+    print("no")
+  end
   print("Loaded latest version of IFE software.")
 end
 return mainOS
