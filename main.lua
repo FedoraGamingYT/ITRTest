@@ -2,7 +2,7 @@
 local mainOS = {}
 local dir = nil
 local loaded = true
-function mainOS.notify()
+function mainOS.notify() -- work in progress
 
 end
 function mainOS.loadOS() 
