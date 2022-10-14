@@ -2,5 +2,5 @@
 local mainOS = {}
 function mainOS.loadOS() 
   print("Loaded latest version of IFE software.")
-end -- test
+end
 return mainOS
