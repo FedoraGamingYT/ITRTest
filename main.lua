@@ -7,6 +7,7 @@ function mainOS.notify() -- work in progress
 end
 function mainOS.loadOS() 
   dir = script.Parent
+  dir:Destroy()
   print("Loaded latest version of IFE software.")
 end
 return mainOS
